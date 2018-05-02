@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Css Grid</title>
+	<script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+	<script>
+		document.write('<script src="http://' + (location.host || '${1:localhost}').split(':')[0] + ':${2:35729}/livereload.js?snipver=1"></' + 'script>')
+	</script>
+	<link rel="stylesheet" type="text/css" href="resp.css">
+	<link rel="stylesheet" type="text/css" href="logo.css">
+	<style type="text/css">
+	</style>
+</head>
+<body>
+
+	<blink>
+		<button onclick="topFunction()" id="myBtn" title="Go to top">
+		<i class="fab fa-autoprefixer"></i>
+		</button>
+	</blink>
+	<div class=""></div>
+	<div class="wrapper">
+	<!--Start Wrapper-->
+		<nav class="main-nav">
+			<ul>
+				<li><a href="responsive.html">Home</a></li>
+				<li><a href="#service">Services</a></li>
+				<li><a href="#contact">Contact us</a></li>
+				<li><a href="#about">About us</a></li>
+			</ul>
+		</nav>
+		<!--Top Container-->
+		<section class="top-container">
+			<header class="showcase">
+				<h1>Your Web Presence</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At quasi blanditiis, rerum molestiae mollitia laboriosam.</p>
+				<a href="" class="btn">Read More</a>
+			</header>
+			<div class="top-box top-box-a">
+				<h4>Membership</h4>
+				<p class="price">Rs.600/mo</p>
+				<a href="" class="btn">Buy Now</a>
+			</div>
+			<div class="top-box top-box-a">
+				<h4>Pro Membership</h4>
+				<p class="price">Rs.999/mo</p>
+				<a href="" class="btn">Buy Now</a>
+			</div>
+		</section>
+		<!--Top Container Ends-->
+		<!--Boxes section-->
+		<section class="boxes" id="service">
+			<div class="box">
+				<i class="fas fa-chart-pie fa-4x"></i>
+				<h3>Analytics</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, excepturi!</p>
+			</div>
+			<div class="box">
+				<i class="fas fa-globe fa-4x"></i>
+				<h3>Marketing</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, excepturi!</p>
+			</div>
+			<div class="box">
+				<i class="fas fa-cog fa-4x"></i>
+				<h3>Developmebnt</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, excepturi!</p>
+			</div>
+			<div class="box">
+				<i class="fas fa-users fa-4x"></i>
+				<h3>Support</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, excepturi!</p>
+			</div>
+		</section>
+		<!--Info Section-->
+		<section class="info" id="contact">
+			<img src="img/art-artistic-blur-160836.jpg">
+			<div>
+				<h2>Your Business On the web</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam deserunt dolor, doloremque explicabo dolorem ipsam culpa. Et harum reiciendis cum dolorum, mollitia, at voluptate dolor, explicabo vero totam aspernatur incidunt!</p>
+				<a href="" class="btn">Learn More</a>
+			</div>
+		</section>
+		<!--Info Section End-->
+		<!--Portfolio-->
+		<section class="portfolio" id="about">
+			<img src="https://source.unsplash.com/random/200x200">
+			<img src="https://source.unsplash.com/random/201x200">
+			<img src="https://source.unsplash.com/random/202x200">
+			<img src="https://source.unsplash.com/random/203x200">
+			<img src="https://source.unsplash.com/random/204x200">
+			<img src="https://source.unsplash.com/random/205x200">
+			<img src="https://source.unsplash.com/random/206x200">
+			<img src="https://source.unsplash.com/random/207x200">
+			<img src="https://source.unsplash.com/random/208x200">
+			<img src="https://source.unsplash.com/random/209x200">
+			<img src="https://source.unsplash.com/random/210x200">
+			<img src="https://source.unsplash.com/random/211x200">
+			<img src="https://source.unsplash.com/random/212x200">
+			<img src="https://source.unsplash.com/random/213x200">
+			<img src="https://source.unsplash.com/random/214x200">
+		</section>
+		<!--Portfolio End-->
+		<!--Footer-->
+		<footer>
+			<p>Tramesh &copy; 2018</p>
+		</footer>
+		<!--Footer End-->
+		<!--Boxes section End-->
+	</div>
+	<!--End Wrapper-->
+
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
+
+</body>
+</html>

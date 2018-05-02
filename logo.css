@@ -1,0 +1,73 @@
+body {
+  background: #12A5F4;
+}
+
+.skype {
+  background: blue;
+  backface-visibility: hidden;
+  width: 10px;
+  height: 10px;
+  position: relative;
+  /*margin: 0 auto;*/
+  border-radius: 150px;
+  border: solid 15px red;
+  animation: play 1.5s ease infinite;
+  backface-visibility: hidden;
+}
+/*.skype:before {
+  background: #fff;
+  content: "";
+  width: 233px;
+  height: 104px;
+  position: absolute;
+  top: 13px;
+  right: 16px;
+  border-radius: 100px;
+  border: solid 15px #fff;
+  z-index: 99998;
+  transform: rotate(45deg);
+  transform-origin: bottom;
+
+/*.skype:after {
+  background: #12A5F4;
+  background-size: 100% 100%;
+  content: "S";
+  line-height: 205px;
+  color: #fff;
+  font-size: 150px;
+  font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
+  font-weight: bold;
+  text-align: center;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  position: absolute;
+  border-radius: 150px;
+  z-index: 99999 !important;
+}*/
+.skype:hover {
+  animation: none;
+  transform: scale(1.2);
+  transition: 0.5s;
+}
+
+@keyframes play {
+  0% {
+    transform: scale(1);
+  }
+  15% {
+    box-shadow: 0 0 0 20px rgba(150, 100, 250, 0.2);
+  }
+  25% {
+    box-shadow: 0 0 0 20px rgba(160, 55, 100, 0.2), 0 0 0 40px rgba(120, 55, 255, 0.2);
+  }
+  30% {
+    transform: scale(1.2);
+  }
+  50% {
+    box-shadow: 0 0 0 20px rgba(0, 122, 255, 0.2), 0 0 0 40px rgba(0,200, 0, 0.2), 0 0 0 60px rgba(230,115, 110, 0.2);
+  }
+  80% {
+    transform: scale(1);
+  }
+}

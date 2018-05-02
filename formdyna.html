@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<style type="text/css">
+		form{
+			position: absolute;
+			height: 40%;
+			width: 30%;
+		    top:0;
+		    bottom: 0;
+		    left: 0;
+		    right: 0;
+		    margin: auto;
+		}
+		input:focus{
+			border: 3px solid #555;
+			background-color: gainsboro;
+		}
+		h1{
+			text-align: center;
+			color: skyblue;
+		}
+		h1:hover{
+			color:red;
+		}
+	</style>
+</head>
+<body>
+	<script type="text/javascript">
+		var f = document.createElement('form');
+		f.setAttribute('method', 'get');
+
+		var cap = document.createElement('h1');
+		cap.innerHTML="Login Form";
+
+
+		var l1 = document.createElement('label');
+		l1.setAttribute('for', 'username');
+		l1.innerHTML = "Username: ";
+
+		var i = document.createElement('input');
+		i.setAttribute('type', 'text');
+		i.setAttribute('id', 'uname');
+		i.setAttribute('name', 'username');
+		i.setAttribute('class', 'form-control sm');
+		i.setAttribute('placeholder', 'Enter Your Username');
+
+		var l2 = document.createElement('label');
+		l2.setAttribute('for', 'password');
+		l2.innerHTML = "Password";
+
+		var i2 = document.createElement('input');
+		i2.setAttribute('type', 'password');
+		i2.setAttribute('name', 'password');
+		i2.setAttribute('id', 'upass');
+		i2.setAttribute('class', 'form-control');
+		i2.setAttribute('placeholder', 'Enter Your Password');
+
+		var br=document.createElement('br');
+		var b = document.createElement('button');
+		b.setAttribute('type', 'submit');
+		b.setAttribute('value', 'submit');
+		b.setAttribute('id', 'submit');
+		b.setAttribute('onClick', 'myclick();');
+		b.setAttribute('class', 'btn btn-danger');
+		b.innerHTML="Submit";
+
+		f.appendChild(cap);
+		f.appendChild(l1);
+		f.appendChild(i);
+		f.appendChild(l2);
+		f.appendChild(i2);
+		f.appendChild(br);
+		f.appendChild(b);
+
+		document.getElementsByTagName('body')[0].appendChild(f);
+
+		function myclick(){
+			var id = document.getElementById('uname').value;
+			var id2 = document.getElementById('upass').value;
+			if (id && id2) {
+			alert("my name is " + id + " and password is " +id2);
+			}
+		}
+	 
+
+		document.body.style.backgroundColor = "grey";
+		
+	</script>
+</body>
+</html>

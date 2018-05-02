@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<style type="text/css">
+	/* select option:hover{
+		color: blue;	
+		background-color: red ! important;
+		box-shadow: all;
+	}*/
+	::selection,select:focus::-ms-vslue{
+		background-color: gray;
+		color: orange;
+	}
+	option:hover{
+		background-color: greenyellow;
+		color: greenyellow;
+	}
+	option:checked:hover,select:focus option:checked:hover{
+		background-color: darkgoldenrod;
+		color: darkgoldenrod;
+	}
+</style>
+<body>	
+<select>
+	<option>Class 1</option>
+	<option>Class 2</option>
+	<option>Class 3</option>
+	<option>Class 4</option>
+	<option>Class 5</option>
+</select>
+<p id="demo"></p>
+<!-- <script>
+// var bt = document.createElement('label');
+// bt.setAttribute('onclick','myFunction()');
+// bt.setAttribute('id','btn1');
+// document.getElementById('btn1').innerHTML = 'Hi, I am Arun Banik';
+
+
+
+var f = document.createElement("form");
+// f.setAttribute('method',"post");
+f.setAttribute('id',"myForm");
+f.setAttribute('action',"#");
+
+var l1 = document.createElement("label"); //input element, text
+l1.setAttribute('type',"label");
+
+var i = document.createElement("input"); //input element, text
+i.setAttribute('type',"text");
+i.setAttribute('name',"username");
+
+var b = document.createElement("br"); //input element, text
+var j = document.createElement("input"); //input element, text
+j.setAttribute('type',"password");
+j.setAttribute('name',"password");
+
+var s = document.createElement("input"); //input element, Submit button
+s.setAttribute('type',"submit");
+s.setAttribute('value',"Submit");
+
+f.appendChild(i);
+// f.appendChild(bt);
+f.appendChild(l1);
+f.appendChild(b);
+f.appendChild(j);
+f.appendChild(s);
+
+//and some more input elements here
+//and dont forget to add a submit button
+
+document.getElementsByTagName('body')[0].appendChild(f);
+
+function myFunction() {
+    var x = document.getElementById("myForm").elements.namedItem("username").value;
+
+if (x) {
+    document.getElementById("demo").innerHTML = "My name is "+x;
+}
+}
+</script> -->
+</body>
+</html>

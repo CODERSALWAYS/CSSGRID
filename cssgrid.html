@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Css Grid</title>
+	<style type="text/css">
+		.wrapper{
+			display: grid;
+			grid-template-columns: 70% 30%;
+			grid-gap: 1em;
+
+			box-shadow: 10px gray;
+		}
+		.wrapper > div{
+			background: #eee;
+			padding: 1em;	
+		}
+		.wrapper > div:nth-child(odd){
+			background: blue;	
+		}
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+		<div>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora vero nulla esse blanditiis sint odio in illo asperiores, facilis ex, laudantium placeat, nihil iure quaerat saepe assumenda ullam error. Ipsum laborum corrupti cumque blanditiis corporis quisquam ut magni voluptates soluta, assumenda nulla voluptas sed aperiam quia error odio obcaecati incidunt voluptatem quam est, optio. Perferendis cupiditate quia aliquid officia vero accusantium numquam temporibus consequuntur ea libero iste alias, earum sapiente dolorem ipsam! Dolores sint, deleniti nisi eaque iusto, sunt accusantium.
+		</div>
+		<div>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, adipisci. Optio, omnis provident asperiores tenetur expedita. Enim esse obcaecati nihil nesciunt quaerat hic praesentium nulla. Minima non harum, voluptas ad.
+		</div>
+		<div>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora vero nulla esse blanditiis sint odio in illo asperiores, facilis ex, laudantium placeat, nihil iure quaerat saepe assumenda ullam error. Ipsum laborum corrupti cumque blanditiis corporis quisquam ut magni voluptates soluta, assumenda nulla voluptas sed aperiam quia error odio obcaecati incidunt voluptatem quam est, optio. Perferendis cupiditate quia aliquid officia vero accusantium numquam temporibus consequuntur ea libero iste alias, earum sapiente dolorem ipsam! Dolores sint, deleniti nisi eaque iusto, sunt accusantium.
+		</div>
+		<div>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, adipisci. Optio, omnis provident asperiores tenetur expedita. Enim esse obcaecati nihil nesciunt quaerat hic praesentium nulla. Minima non harum, voluptas ad.
+		</div>
+	</div>
+</body>
+</html>
